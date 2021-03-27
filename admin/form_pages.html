@@ -1,0 +1,18 @@
+<?php if(isset($entete)){echo $entete;} ?>
+<form enctype="multipart/form-data" action="admin.php?module=pages&action=<?php if(isset($action_form)){echo $action_form;} ?>" method="POST" id="form_action">
+	
+	<select name="id_menu" <?php if(isset($color['id_menu'])){echo $color['id_menu'];} ?>>
+		<?php if(isset($ld_menu)){echo $ld_menu;} ?>
+	</select>
+	
+	<input <?php if(isset($color['titre_page'])){echo $color['titre_page'];} ?>type="text" name="titre_page" value="<?php if(isset($_POST['titre_page'])){echo $_POST['titre_page'];} ?>" placeholder="Titre de la page *" />
+	<div class="YSeditor">
+		<textarea <?php if(isset($color['contenu_page'])){echo $color['contenu_page'];} ?> name="contenu_page" placeholder="Contenu de la page"><?php if(isset($_POST['contenu_page'])){echo $_POST['contenu_page'];} ?></textarea>
+	</div>
+	<label>Fichier image (jpg|png|gif) *</label>
+	<input <?php if(isset($color['fichier_page'])){echo $color['fichier_page'];} ?> type="file" name="fichier_page" value="" placeholder="Fichier image (jpg|png|gif) *" />
+	</div>
+		
+	<input type="submit" name="submit" value="ENVOYER" />
+	<?php if(isset($message)){echo $message;} ?>	
+</form>

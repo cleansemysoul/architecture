@@ -1,0 +1,42 @@
+.sss{
+	height: 0;
+	margin: 0; 
+	padding-top:50% !important;
+	padding-bottom:0 !important;
+	position: relative;
+	display: block;	
+}
+
+.ssslide{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.sssnext, .sssprev{
+	width:64px;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	z-index:10;
+	top: 0;
+	background:url('../images/arr.png') no-repeat;
+}
+
+.sssprev {
+	left: 3%;
+	background-position: 0 45%;
+}
+
+.sssnext {
+	right: 3%;
+	background-position: -64px 45%;
+}
+
+.sssprev:hover,.sssnext:hover{
+	cursor: pointer;
+}

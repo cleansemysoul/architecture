@@ -1,0 +1,15 @@
+<?php if(isset($entete)){echo $entete;} ?>
+<form action="admin.php?module=menus&action=<?php if(isset($action_form)){echo $action_form;} ?>" method="POST">
+	
+	<input <?php if(isset($color['intitule_menu'])){echo $color['intitule_menu'];} ?>placeholder="Intitulé de l'item" name="intitule_menu" type="text" value="<?php if(isset($_POST['intitule_menu'])){echo $_POST['intitule_menu'];} ?>" />
+	<input <?php if(isset($color['lien_menu'])){echo $color['lien_menu'];} ?>placeholder="Lien de l'item" name="lien_menu" type="text" value="<?php if(isset($_POST['lien_menu'])){echo $_POST['lien_menu'];} ?>" />
+	<select name="type_menu"  id="type_menu" <?php if(isset($color['type_menu'])){echo $color['type_menu'];} ?>>
+		<option value="">Type de menu</option>
+		<option value="front"<?php if(isset($selected['front'])){echo $selected['front'];} ?>>Côté front</option>
+		<option value="back"<?php if(isset($selected['back'])){echo $selected['back'];} ?>>Côté back</option>
+	</select>	
+	
+	<input name="submit" type="submit" value="ENVOYER" />
+	
+	<?php if(isset($message)){echo $message;} ?>
+</form>

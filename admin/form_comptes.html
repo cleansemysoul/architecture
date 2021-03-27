@@ -1,0 +1,19 @@
+<?php if(isset($entete)){echo $entete;} ?>
+<form enctype="multipart/form-data" action="admin.php?module=comptes&action=<?php if(isset($action_form)){echo $action_form;} ?>" method="post">
+	<input <?php if(isset($color['nom_compte'])){echo $color['nom_compte'];} ?>type="text" name="nom_compte" value="<?php if(isset($_POST['nom_compte'])){echo $_POST['nom_compte'];} ?>" placeholder="Nom *" />
+	<input <?php if(isset($color['prenom_compte'])){echo $color['prenom_compte'];} ?>type="text" name="prenom_compte" value="<?php if(isset($_POST['prenom_compte'])){echo $_POST['prenom_compte'];} ?>" placeholder="Prénom *" />
+	<input <?php if(isset($color['login_compte'])){echo $color['login_compte'];} ?>type="text" name="login_compte" value="<?php if(isset($_POST['login_compte'])){echo $_POST['login_compte'];} ?>" placeholder="Identifiant *" />	
+	
+	<select name="statut_compte"  id="statut_compte" <?php if(isset($color['statut_compte'])){echo $color['statut_compte'];} ?>>
+		<option value="">Statut</option>
+		<option value="user"<?php if(isset($selected['user'])){echo $selected['user'];} ?>>Utilisateur</option>
+		<option value="admin"<?php if(isset($selected['admin'])){echo $selected['admin'];} ?>>Administrateur</option>
+	</select>	
+	<input <?php if(isset($color['pass_compte'])){echo $color['pass_compte'];} ?>type="text" onfocus="this.type='password';" name="pass_compte" value="<?php if(isset($_POST['pass_compte'])){echo $_POST['pass_compte'];} ?>" placeholder="Mot de passe *" />	
+	<label>Avatar (jpg|png|gif) *</label>
+	<input <?php if(isset($color['fichier_compte'])){echo $color['fichier_compte'];} ?> type="file" name="fichier_compte" value="" placeholder="Avatar(jpg|png|gif) *" />	
+		
+	
+	<input type="submit" name="submit" value="ENVOYER" />
+	<?php if(isset($message)){echo $message;} ?>	
+</form>

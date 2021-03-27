@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Back office</title>
+<link href="../css/root.css" rel="stylesheet" type="text/css" />
+<link href="../css/color.css" rel="stylesheet" type="text/css" />
+<link href="../css/back.css" rel="stylesheet" type="text/css" />
+<link href="../css/yseditor.css" rel="stylesheet" type="text/css" />
+<link href="../css/dashicons.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script> 
+<script type="text/javascript" src="../js/admin.js"></script> 
+</head>
+
+<body>
+	<aside id="zone_gauche">
+		<?php if(isset($menu_back)){echo $menu_back;} ?>
+	</aside>
+
+	</aside>
+	<main id="zone_droite">
+		<header id="header_back">
+			<h1>Bienvenue sur le back</h1>
+			<div id="bienvenue">
+				<?php if(isset($bienvenue)){echo $bienvenue;} ?>
+				<?php if(isset($_SESSION['parametres'])){echo $_SESSION['parametres'];} ?>
+				<a href="admin.php?module=deconnecter"><span class="dashicons dashicons-no"></span></a>
+			</div>
+		</header>
+		<section id="contenu_back">
+			<?php
+			if(isset($contenu)){include($contenu);}
+			if(isset($tab_resultats)){echo $tab_resultats;}
+			?>
+		</section>
+		<footer id="footer_back"></footer>
+	</main>
+</body>
+</html>

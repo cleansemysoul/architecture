@@ -1,0 +1,19 @@
+<?php if(isset($entete)){echo $entete;} ?>
+<form enctype="multipart/form-data" action="admin.php?module=articles&action=<?php if(isset($action_form)){echo $action_form;} ?>" method="POST" id="form_action">
+	<input <?php if(isset($color['titre_article'])){echo $color['titre_article'];} ?>type="text" name="titre_article" value="<?php if(isset($_POST['titre_article'])){echo $_POST['titre_article'];} ?>" placeholder="Titre de l'article *" />
+	<div class="YSeditor">
+		<textarea <?php if(isset($color['contenu_article'])){echo $color['contenu_article'];} ?> name="contenu_article" placeholder="Contenu de l'article"><?php if(isset($_POST['contenu_article'])){echo $_POST['contenu_article'];} ?></textarea>
+	</div>
+	<input <?php if(isset($color['date_article'])){echo $color['date_article'];} ?>type="date" name="date_article" value="<?php if(isset($_POST['date_article'])){echo $_POST['date_article'];} ?>" placeholder="Date de l'article *" />
+	<label>Fichier image (jpg|png|gif) *</label>
+	<input <?php if(isset($color['fichier_article'])){echo $color['fichier_article'];} ?> type="file" name="fichier_article" value="" placeholder="Fichier image (jpg|png|gif) *" />	
+	<fieldset>
+		<label>Flux RSS</label>
+		<input <?php if(isset($check)){echo $check;} ?> type="checkbox" name="flux_article" value="1" />
+	</fieldset>
+	</div>
+
+		
+	<input type="submit" name="submit" value="ENVOYER" />
+	<?php if(isset($message)){echo $message;} ?>	
+</form>

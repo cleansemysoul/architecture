@@ -1,0 +1,21 @@
+<?php if(isset($entete)){echo $entete;} ?>
+<form id="form_config" action="admin.php?module=config" method="POST">
+	<fieldset>
+		<label for="couleur_1">Couleur n°1</label>
+		<input <?php if(isset($color['color_1'])){echo $color['color_1'];} ?> name="color_1" type="color" value="<?php if(isset($_POST['color_1'])){echo $_POST['color_1'];} ?>" />
+	</fieldset>
+	
+	<fieldset>
+		<label for="couleur_2">Couleur n°2</label>
+		<input <?php if(isset($color['color_2'])){echo $color['color_2'];} ?> name="color_2" type="color" value="<?php if(isset($_POST['color_2'])){echo $_POST['color_2'];} ?>" />
+	</fieldset>
+
+	<fieldset>
+		<label for="couleur_3">Couleur n°3</label>
+		<input <?php if(isset($color['color_3'])){echo $color['color_3'];} ?> name="color_3" type="color" value="<?php if(isset($_POST['color_3'])){echo $_POST['color_3'];} ?>" />
+	</fieldset>
+	
+	<input name="submit" type="submit" value="ENREGISTRER" />
+	<?php if(isset($message)){echo $message;} ?>
+</form>
+

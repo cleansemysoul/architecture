@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Architecture</title>
+<link href="../css/root.css" rel="stylesheet" type="text/css" />
+<link href="../css/color.css" rel="stylesheet" type="text/css" />
+<link href="../css/front.css" rel="stylesheet" type="text/css" />
+<link href="../css/front_responsive.css" rel="stylesheet" type="text/css" />
+<link href="../css/dashicons.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/sss.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<script src="../js/jquery.min.js"></script>
+<script src="../js/sss.min.js"></script>
+</head>
+
+<body>
+	<?php if(isset($retour_back)){echo $retour_back;} ?>
+	<header id="header">
+		<figure id="logo">
+			<a href="front.php"><img src="../images/logo.png" alt="BETB" /></a>
+			<figcaption>Bureau d'études<br />techniques du bâtiment</figcaption>
+		</figure>
+		<div id="cta">
+			<button class="cta cta_vert">CONTACTEZ NOUS</button>
+			<button class="cta cta_vert">APPELEZ NOUS</button>
+		</div>
+	</header>
+	
+	<?php if(isset($menu_haut)){echo $menu_haut;} ?>
+	
+	<!--main désigne le contenu principal du site-->
+	<main>
+	<?php if(isset($contenu)){include($contenu);} ?>
+	</main>
+	
+	<footer id="footer" class="position">
+		<div>
+			<h2>Informations</h2>
+			<ul>
+				<li><a href="#">Plan du site</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">A propos</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Actualités</a></li>	
+				<li><a href="#">Contact</a></li>					
+			</ul>
+		</div>
+		
+		<div>
+			<h2>Contact</h2>
+			<p><span class="dashicons dashicons-location"></span>8 rue du Général de Gaulle<br />56910 Carentoir</p>	
+			<p><span class="dashicons dashicons-smartphone"></span>02 99 08 84 01</p>
+			<p><span class="dashicons dashicons-email"></span>Contact@betb.bzh</p>			
+		</div>
+		
+		<div>
+			<ul>
+				<li><a href="#">Mentions légales</a></li>
+				<li><a href="#">Crédits</a></li>
+				<li><a href="../feed/index.php">Flus RSS</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</body>
+</html>

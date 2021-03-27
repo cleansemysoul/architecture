@@ -1,0 +1,11 @@
+<?php if(isset($entete)){echo $entete;} ?>
+<form enctype="multipart/form-data" action="admin.php?module=sliders&action=<?php if(isset($action_form)){echo $action_form;} ?>" method="post">
+	<input <?php if(isset($color['titre_slider'])){echo $color['titre_slider'];} ?>type="text" name="titre_slider" value="<?php if(isset($_POST['titre_slider'])){echo $_POST['titre_slider'];} ?>" placeholder="Titre du slider *" />
+	<textarea <?php if(isset($color['descriptif_slider'])){echo $color['descriptif_slider'];} ?> name="descriptif_slider" placeholder="Descriptif du slider"><?php if(isset($_POST['descriptif_slider'])){echo $_POST['descriptif_slider'];} ?></textarea>
+	<label>Fichier image (jpg|png|gif) *</label>
+	<input <?php if(isset($color['fichier_slider'])){echo $color['fichier_slider'];} ?> type="file" name="fichier_slider" value="" placeholder="Fichier image (jpg|png|gif) *" />	
+	
+	
+	<input type="submit" name="submit" value="ENVOYER" />
+	<?php if(isset($message)){echo $message;} ?>	
+</form>

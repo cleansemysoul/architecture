@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="http://localhost/archi_v5">
+<channel>
+<atom:link rel="self" href="http://localhost/archi_v5/feed/rss.xml"/>
+<title>Nos actus</title>
+<description>Le petit journal hebdo de Archi</description>
+<lastBuildDate>Tue, 10 Nov 2020 11:01:58 +0000</lastBuildDate>
+<link>http://localhost/archi_v5</link>
+<language>fr</language>
+<copyright>Copyright 2020</copyright>
+<image>
+<title>Archi : construction et rénovation de maisons individuelles</title>
+<url>http://localhost/archi_v5/images/logo.png</url>
+<link>http://localhost/archi_v5</link>
+<width>185</width>
+<height>99</height>
+</image>
+
+<item>
+<title><![CDATA[sdvsdcvdv]]></title>
+<description><![CDATA[sdvsdv]]></description>
+<pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+<link>http://localhost/archi_v5/front/front.php?page=single&amp;id_article=7</link>
+<guid isPermaLink="false">7</guid>
+</item>
+
+<item>
+<title><![CDATA[Actu 4]]></title>
+<description><![CDATA[Ridiculus mollitia, ullamco facere, nobis minima placerat a repellat fusce scelerisque reprehenderit earum, urna habitant ducimus reiciendis quasi nobis vel.
+
+Hac debitis blandit accusamus molestiae aperiam? Consequat eiusmod accusamus metus adipiscing ipsum montes lobortis assumenda mollit ipsam duis! Minim sem.
+Hac debitis blandit accusamus molestiae aperiam? Consequat eiusmod accusamus metus adipiscing ipsum montes lobortis assumenda mollit ipsam duis! Minim sem.
+
+Dolorum euismod? Etiam gravida, quibusdam per nemo dui accusantium quas molestie at doloremque excepteur doloremque tortor facilis ligula lorem vulputate.
+Dolorum euismod? Etiam gravida, quibusdam per nemo dui accusantium quas molestie at doloremque excepteur doloremque tortor facilis ligula lorem vulputate.]]></description>
+<pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+<link>http://localhost/archi_v5/front/front.php?page=single&amp;id_article=4</link>
+<guid isPermaLink="false">4</guid>
+<enclosure length="2650" url="../medias/media4_b.jpg"  type="image/jpeg" />
+</item>
+
+<item>
+<title><![CDATA[Actu 3]]></title>
+<description><![CDATA[Ridiculus mollitia, ullamco facere, nobis minima placerat a repellat fusce scelerisque reprehenderit earum, urna habitant ducimus reiciendis quasi nobis vel.
+
+Hac debitis blandit accusamus molestiae aperiam? Consequat eiusmod accusamus metus adipiscing ipsum montes lobortis assumenda mollit ipsam duis! Minim sem.
+
+Dolorum euismod? Etiam gravida, quibusdam per nemo dui accusantium quas molestie at doloremque excepteur doloremque tortor facilis ligula lorem vulputate.]]></description>
+<pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+<link>http://localhost/archi_v5/front/front.php?page=single&amp;id_article=3</link>
+<guid isPermaLink="false">3</guid>
+<enclosure length="311487" url="../medias/media3_b.jpg"  type="image/jpeg" />
+</item>
+
+<item>
+<title><![CDATA[Actu 2]]></title>
+<description><![CDATA[Ridiculus mollitia, ullamco facere, nobis minima placerat a repellat fusce scelerisque reprehenderit earum, urna habitant ducimus reiciendis quasi nobis vel.
+
+Hac debitis blandit accusamus molestiae aperiam? Consequat eiusmod accusamus metus adipiscing ipsum montes lobortis assumenda mollit ipsam duis! Minim sem.
+
+Dolorum euismod? Etiam gravida, quibusdam per nemo dui accusantium quas molestie at doloremque excepteur doloremque tortor facilis ligula lorem vulputate.]]></description>
+<pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+<link>http://localhost/archi_v5/front/front.php?page=single&amp;id_article=2</link>
+<guid isPermaLink="false">2</guid>
+<enclosure length="38266" url="../medias/media2_b.jpg"  type="image/jpeg" />
+</item>
+
+<item>
+<title><![CDATA[Actu à la une]]></title>
+<description><![CDATA[Ridiculus mollitia, ullamco facere, nobis minima placerat a repellat fusce scelerisque reprehenderit earum, urna habitant ducimus reiciendis quasi nobis vel.
+
+Hac debitis blandit accusamus molestiae aperiam? Consequat eiusmod accusamus metus adipiscing ipsum montes lobortis assumenda mollit ipsam duis! Minim sem.
+
+Dolorum euismod? Etiam gravida, quibusdam per nemo dui accusantium quas molestie at doloremque excepteur doloremque tortor facilis ligula lorem vulputate.]]></description>
+<pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+<link>http://localhost/archi_v5/front/front.php?page=single&amp;id_article=1</link>
+<guid isPermaLink="false">1</guid>
+<enclosure length="311487" url="../medias/media1_b.jpg"  type="image/jpeg" />
+</item>
+</channel>
+</rss>
